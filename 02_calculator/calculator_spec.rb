@@ -77,11 +77,14 @@ end
 # once the above tests pass,
 # write tests and code for the following:
 
-describe "#multiply" do
+describe "computes the multiplication of numbers" do
+  it "multiplies two numbers" do
+	expect(multiply([2,3])).to eq(6)
+  end
 
-  it "multiplies two numbers"
-
-  it "multiplies several numbers"
+  it "multiplies several numbers" do
+	expect(multiply([2,3,4,2])).to eq(48)
+  end
   
 end
 
