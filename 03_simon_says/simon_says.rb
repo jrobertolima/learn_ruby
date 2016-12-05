@@ -7,7 +7,7 @@ def shout(greeting)
 	(greeting=="hello" or greeting=="bye")? echo(greeting).upcase : greeting.upcase
 end
 	
-def repeat(*greeting)
+def repeat(*greeting) 
 	greetingLocal = greeting[0]
 	i = (greeting[1].to_i)-1
 	if (i > 0)
@@ -38,7 +38,7 @@ def first_word(word)
 end
 
 def titleize(title)
-	littleWords = ["and","the","over","to","under"] 
+	littleWords = ["and","the","over","to","under","or"] 
 	titleLocal = title.split
 	titleLocal.each do |x|
 	    if littleWords.index(x)==nil or (titleLocal.index(x)==0)
