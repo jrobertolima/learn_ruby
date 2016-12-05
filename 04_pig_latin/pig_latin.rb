@@ -1,4 +1,3 @@
-
 #translate word
 def traduz(text)
 	if text[0] =~ /[aeiou]/  #start with vowel
@@ -10,7 +9,7 @@ end
 
 #translate a text
 def translate(text)
-	words = text.split
+	words = text.split #Dividing text in words
 	word=""
 	for i in 0..words.size-1
 		word+=" "+traduz(words[i])
